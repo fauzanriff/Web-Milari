@@ -1,0 +1,728 @@
+<html>
+	<head>
+		<title>
+			Milari
+		</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datepicker.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="popup1" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Penambahan Ruang
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Nama Ruang">
+									</div>
+								</div>
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Kapasitas">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btRuang">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="popup2" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Penambahan Kuliah
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Kode Kuliah">
+									</div>
+								</div>
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Ruangan">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Waktu Mulai">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Waktu Akhir">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btKuliah">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="popup3" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Peminjaman Ruang
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Ruangan">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Nama Peminjam">
+									</div>
+								</div>
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Kegiatan">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Waktu Mulai">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+								<div class="popup-form col-md-7">
+									<div class="form-input">
+										<input class="text-box onwhite" type="text" placeholder="Waktu Akhir">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btPinjam">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="canvas" class="canvas row">
+			<header class="sidebar-full header-menu col-md-3">
+				<div class="header-title logo">
+					MILARI
+				</div>
+				<div class="header-search">
+					<form>
+						<input type="text" class="text-box" placeholder="Search">
+					</form>
+				</div>
+				<div class="nav-container">
+					<div class="nav-inner">
+						<a class="btn--nav active" href="home.html">
+							<div>
+								<i class="material-icons">home</i>
+							</div>
+							<div>
+								Home
+							</div>
+						</a>
+						<a class="btn--nav" href="statistik.html">
+							<div>
+								<i class="material-icons">timeline</i>
+							</div>
+							<div>
+								Statistik
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header-foot">
+					<a class="btn--main btPinjam">Tambah Peminjaman</a>
+				</div>
+			</header>
+			<div class="sidebar-full rooms-menu col-md-2">
+				<div class="container-div">
+					<div class="title-div title-div-ruang">
+						<h1 class="title-mid title--top room-tag">Ruangan</h1>
+					</div>
+					<div class="content-div">
+						<div class="rooms">
+							<div class="room">
+								<div class="room-name">
+									<h1 class="title-mid room-title">7601</h1>
+									<p class="room-cap">CAPACITY <span>30</span></p>
+								</div>
+							</div>
+							<div class="room">
+								<div class="room-name">
+									<h1 class="title-mid room-title">7602</h1>
+									<p class="room-cap">CAPACITY <span>96</span></p>
+								</div>
+							</div>
+							<div class="room">
+								<div class="room-name">
+									<h1 class="title-mid room-title">7603</h1>
+									<p class="room-cap">CAPACITY <span>52</span></p>
+								</div>
+							</div>
+							<div class="room">
+								<div class="room-name">
+									<h1 class="title-mid room-title">7604</h1>
+									<p class="room-cap">CAPACITY <span>34</span></p>
+								</div>
+							</div>
+							<div class="room">
+								<div class="room-name">
+									<h1 class="title-mid room-title">7605</h1>
+									<p class="room-cap">CAPACITY <span>67</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-div">
+						<a class="btn--main btn--mid btRuang">
+							<div>
+								<i class="material-icons md-18">add</i><i class="material-icons md-18">account_balance</i>
+							</div>
+							<div>
+								Tambah Ruang
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="today col-md-11 fixed-canvas container-div--display">
+				<div class="container-div">
+					<div class="title-div time-div">
+						<div class="row layer-top">
+							<div class="col-md-1">
+								<h1 class="title-mid title--top">Feb 1</h1>
+							</div>
+							<div class="col-md-1">
+								<div class="btn-container--top">
+									<a class="btn btn--gray btKuliah" href=""> <i class="material-icons md-12">add</i><i class="material-icons md-12">school</i> Tambah Kuliah </a>
+								</div>
+							</div>
+						</div>
+						<div class="times-tag">
+							<div class="times-inner">
+								<div>
+									<div class="row">
+										<div class="time col-md-1">
+											07:00
+										</div>
+										<div class="time col-md-1">
+											08:00
+										</div>
+										<div class="time col-md-1">
+											09:00
+										</div>
+										<div class="time col-md-1">
+											10:00
+										</div>
+										<div class="time col-md-1">
+											11:00
+										</div>
+										<div class="time col-md-1">
+											12:00
+										</div>
+										<div class="time col-md-1">
+											13:00
+										</div>
+										<div class="time col-md-1">
+											14:00
+										</div>
+										<div class="time col-md-1">
+											15:00
+										</div>
+										<div class="time col-md-1">
+											16:00
+										</div>
+										<div class="time col-md-1">
+											17:00
+										</div>
+										<div class="time col-md-1">
+											18:00
+										</div>
+										<div class="time col-md-1">
+											19:00
+										</div>
+										<div class="time col-md-1">
+											20:00
+										</div>
+										<div class="time col-md-1">
+											21:00
+										</div>
+										<div class="time col-md-1">
+											22:00
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-div time-div">
+						<div class="row tasks-container">
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--blue">
+									Facebook Internship
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--red">
+									Meeting President
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+						</div>
+						<div class="row tasks-container">
+							<div class="tasks col-md-1">
+								<div class="task task--green">
+									Pemrograman Berorientasi Objek
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+						</div>
+						<div class="row tasks-container">
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+						</div>
+						<div class="row tasks-container">
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+						</div>
+						<div class="row tasks-container">
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+							<div class="tasks col-md-1">
+								<div class="task task--add">
+									<i class="material-icons md-12">add</i> ADD
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-div">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/function.js" ></script>
+	</body>
+</html>

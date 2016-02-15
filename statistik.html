@@ -1,0 +1,346 @@
+<html>
+	<head>
+		<title>
+			Milari
+		</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datepicker.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="popup1" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Penambahan Ruang
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Nama Ruang">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Kapasitas">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btRuang">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="popup2" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Penambahan Kuliah
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Kode Kuliah">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Ruangan">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Waktu Mulai">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Waktu Akhir">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btKuliah">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="popup3" class="popup hidden">
+			<div class="popup-window">
+				<form>
+					<div id="popupw" class="popup-inner">
+						<div class="popup-header">
+							<div class="header-title">
+								Peminjaman Ruang
+							</div>
+						</div>
+						<div class="popup-content">
+							<div class="row">
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Ruangan">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Nama Peminjam">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Kegiatan">
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Waktu Mulai">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+								<div class="popup-form col-md-5">
+									<div class="form-input">
+										<input class="text-box" type="text" placeholder="Waktu Akhir">
+										<p>Example : 31/12/2016 23:59</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<div class="popup-form popup--submit">
+								<input type="submit" class="btn btn--submit btn--inline" value="Submit">
+							</div>
+						</div>
+						<div class="popup-close">
+							<i class="material-icons btn--icon btPinjam">close</i>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="canvas" class="canvas row">
+			<header class="sidebar-full header-menu col-md-3">
+				<div class="header-title logo">
+					MILARI
+				</div>
+				<div class="header-search">
+					<form>
+						<input type="text" class="text-box" placeholder="Search">
+					</form>
+				</div>
+				<div class="nav-container">
+					<div class="nav-inner">
+						<a class="btn--nav" href="home.html">
+							<div>
+								<i class="material-icons">home</i>
+							</div>
+							<div>
+								Home
+							</div>
+						</a>
+						<a class="btn--nav active" href="statistik.html">
+							<div>
+								<i class="material-icons">timeline</i>
+							</div>
+							<div>
+								Statistik
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header-foot">
+					<a class="btn--main btPinjam">Tambah Peminjaman</a>
+				</div>
+			</header>
+			<div class="col-md-13 content">
+				<div class="content-header">
+					<div class="top-nav">
+						<div>
+							Statistik
+						</div>
+					</div>
+				</div>
+				<div class="content-mid">
+					<div class="mid-canvas">
+						<div class="mid-inner">
+							<div class="mid-content">
+								<div class="main-stat row">
+									<div class="stat-box col-md-8">
+										<div class="stat-inner stat-inner--green">
+											<div class="stat-title">
+												PEMAKAIAN
+											</div>
+											<div class="stat-content">
+												87 <span>%</span>
+											</div>
+										</div>
+									</div>
+									<div class="stat-box col-md-8">
+										<div class="stat-inner">
+											<div class="stat-title">
+												KERUSAKAN
+											</div>
+											<div class="stat-content">
+												2 <span>%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list-of-stat row">
+									<div class="list-stat col-md-8">
+										<div class="list-inner">
+											<div class="stat-list-title">
+												Presentasi Pemakaian
+											</div>
+											<div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7601
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div>
+											<div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7602
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7603
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7604
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7605
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list-stat col-md-8">
+										<div class="list-inner">
+											<div class="stat-list-title">
+												Presentasi Kerusakan
+											</div>
+											<div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7601
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div>
+											<div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7602
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7603
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7604
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div><div class="stat row">
+												<div class="col-md-12 stat-ruang">
+													Ruang 7605
+												</div>
+												<div class="col-md-2 stat-count">
+													88
+												</div>
+												<div class="col-md-2 stat-percent">
+													88%
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-footer">
+					
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/function.js" ></script>
+	</body>
+</html>
