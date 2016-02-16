@@ -102,6 +102,10 @@ a:focus{
   outline: 1px solid #1F68DF;
 }
 
+.noned{
+	display: none;
+}
+
 /**********
 	HEADER/SIDE BAR
  **********/
@@ -182,6 +186,27 @@ a:focus{
 /**********
 	TASKS
  **********/
+
+#date{
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#date:hover,
+#date:focus{
+	background-color: #434857;
+}
+
+.date-arrow{
+	margin: 12px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.date-arrow:hover,
+.date-arrow:focus{
+	color: #1F68DF
+}
 
  .tasks-container{
  	border-bottom-style: solid;
@@ -614,8 +639,8 @@ a:focus{
 	font-weight: 400;
 	color: #FFFFFF;
 	text-align: center;
-	margin: 0;
-	padding: 0.75em;
+	margin: 0.75em;
+	padding: 0;
 }
 
 .title--top{

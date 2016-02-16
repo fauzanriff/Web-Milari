@@ -3,10 +3,22 @@
 		<title>
 			Milari
 		</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/default.date.css">
+		<link rel="stylesheet" type="text/css" href="css/default.time.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/datepicker.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/picker.js"></script>
+		<script type="text/javascript" src="js/picker.date.js"></script>
+		<script type="text/javascript" src="js/picker.time.js"></script>
+		<script>
+         $(function() {
+         	$('#datepicker').pickadate();
+         });
+      </script>
 	</head>
 	<body>
 		<div id="popup1" class="popup hidden">
@@ -95,7 +107,7 @@
 		</div>
 		<div id="popup3" class="popup hidden">
 			<div class="popup-window">
-				<form>
+				<form id="form3">
 					<div id="popupw" class="popup-inner">
 						<div class="popup-header">
 							<div class="header-title">
@@ -110,6 +122,7 @@
 									</div>
 								</div>
 							</div>
+							<input class="text-box onwhite noned" type="text" name="id-task">
 							<div class="row">
 								<div class="popup-form col-md-7">
 									<div class="form-input">
@@ -238,8 +251,10 @@
 				<div class="container-div">
 					<div class="title-div time-div">
 						<div class="row layer-top">
-							<div class="col-md-1">
-								<h1 class="title-mid title--top">Feb 1</h1>
+							<div class="col-md-2 row">
+								<span class="col-md-2"><i class="material-icons date-arrow">keyboard_arrow_left</i></span>
+								<input id="datepicker" type="text" class="title-mid title--top col-md-10" value="Feb 1">
+								<span class="col-md-2"><i class="material-icons date-arrow">keyboard_arrow_right</i></span>
 							</div>
 							<div class="col-md-1">
 								<div class="btn-container--top">
@@ -306,72 +321,72 @@
 					</div>
 					<div class="content-div time-div">
 						<div class="row tasks-container">
-							<div class="tasks col-md-1">
+							<div id="7601-1" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-2" class="tasks col-md-1">
 								<div class="task task--blue">
 									Facebook Internship
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-3" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-4" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-5" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-6" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-7" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-8" class="tasks col-md-1">
 								<div class="task task--red">
 									Meeting President
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-9" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-10" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-11" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-12" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-13" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
 							</div>
-							<div class="tasks col-md-1">
+							<div id="7601-14" class="tasks col-md-1">
 								<div class="task task--add">
 									<i class="material-icons md-12">add</i> ADD
 								</div>
@@ -722,7 +737,6 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/function.js" ></script>
 	</body>
 </html>
