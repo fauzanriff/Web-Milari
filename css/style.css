@@ -230,9 +230,7 @@ a:focus{
 
  .tasks:hover,
  .tasks:focus{
- 	border-bottom-style: solid;
- 	border-bottom-width: 2px;
- 	border-bottom-color: #434857;
+
  }
 
 .task{
@@ -510,6 +508,18 @@ a:focus{
 	padding-top: 1em;
 }
 
+.btn--opt{
+	float: right;
+	margin: 0 8px;
+	color: #434857;
+	cursor: pointer;
+}
+
+.btn--opt:hover,
+.btn--opt:focus{
+	color: #FFF;
+}
+
 /**********
 	FORM
  **********/
@@ -530,6 +540,7 @@ a:focus{
 	background-color: transparent;
 	outline: none;
 	margin-bottom: 9px;
+	color: #FFF;
 }
 
 .text-box:focus{
@@ -541,6 +552,32 @@ a:focus{
 	border-bottom-style: solid;
 	background-color: #434857;
 }
+
+.onwhite{
+	color: #333;
+}
+
+.onwhite:focus{
+	background-color: #FFF;
+	border-bottom-color: #252830;
+}
+
+	.onwhite::-webkit-input-placeholder {
+	    color:    #AAA;
+	    font-size: 15px;
+	}
+	.onwhite:-moz-placeholder {
+	    color:    #AAA;
+	    font-size: 15px;
+	}
+	.onwhite::-moz-placeholder {
+	    color:    #AAA;
+	    font-size: 15px;
+	}
+	.onwhite:-ms-input-placeholder {
+	    color:    #AAA;
+	    font-size: 15px;
+	}
 
 .form-input p{
 	padding-left: 1em;
@@ -584,7 +621,7 @@ a:focus{
 .popup-inner{
 	position: relative;
 	display: table;
-	background-color: rgba(37,40,48,0.88);
+	background-color: rgba(250,250,250,0.95);
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
 	width: 40em;
@@ -712,7 +749,7 @@ a:focus{
 }
 
 .room-tag{
-	padding-bottom: 32px;
+	padding-bottom: 22px;
 }
 
 /**********

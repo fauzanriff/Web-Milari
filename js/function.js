@@ -21,10 +21,6 @@ $('.btPinjam').click(function(event){
 });
 
 $('.task--add').click(function(event){
-	var thisTarget = $(event.target);
-	var thisParent = thisTarget.parents('div');
-	popupId = thisParent.attr('id');
-
 	event.preventDefault();
 	popUp("3");
 });
